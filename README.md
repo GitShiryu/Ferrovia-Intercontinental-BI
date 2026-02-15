@@ -60,18 +60,17 @@ O projeto prioriza performance e lógica robusta, essenciais para ambientes de S
 ---
 
 ## 🚀 Como Executar o Projeto
-Este projeto foi estruturado para ser executado localmente.
+Para rodar o projeto, execute os comandos abaixo sequencialmente no seu terminal:
 
-1. **Clonar Repositório:**
-   ```bash
-   git clone [https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git](https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git)
+```bash
+# 1. Clonar o Repositório
+git clone [https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git](https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git)
 
-2. **Instalar Dependências:**
-   ```bash
+# 2. Instalar Dependências
 pip install -r requirements.txt
 
-3. **Executar Aplicação:**
-   ```bash
+# 3. Executar a Aplicação
 python dashboard_ferrovia.py
 
 *Desenvolvido por Rômulo | Foco em Soluções Digitais, Automação e Segurança Operacional.*
+
