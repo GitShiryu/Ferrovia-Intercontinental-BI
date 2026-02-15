@@ -22,5 +22,15 @@ Um Dashboard Web Interativo (Dark Mode) que atua como camada de inteligência:
 - **Dash & Plotly:** Interface analítica interativa.
 - **Pandas/NumPy:** Modelagem estatística e tratamento de dados.
 
+- ## ⚙️ Arquitetura de Integração (Simulação)
+Embora este portfólio utilize dados estáticos por segurança, o código foi estruturado com princípios de **ETL (Extract, Transform, Load)** para ambientes corporativos:
+
+1.  **Camada de Ingestão:** O script aceita entrada de arquivos `.csv` (padrão SAP/ERP) ou conexão via API Rest.
+2.  **Processamento (Pandas):**
+    - Limpeza de dados nulos.
+    - Tipagem de variáveis (Data, Float, String).
+    - Criação de colunas calculadas (KPIs de Custo x Km).
+3.  **Visualização (Front-end):** O Dash consome apenas os dados já tratados, garantindo performance leve para o usuário final.
+
 ---
 *Projeto desenvolvido para portfólio de Data Science e Logística.*
