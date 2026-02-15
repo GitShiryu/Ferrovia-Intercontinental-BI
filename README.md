@@ -1,36 +1,45 @@
-# 🌎 Ferrovia Intercontinental - Dashboard Logístico
+# 🛡️ Sistema de Inteligência Operacional e Segurança Ferroviária
 
-### Sistema de Monitoramento de Tráfego e Custos (Rota das Américas)
+### Solução de Monitoramento de Ativos Críticos e Prevenção de Riscos (Rota Intercontinental)
 
-Este projeto é uma solução proprietária de **Business Intelligence (BI)** desenvolvida em **Python** para simular e resolver gargalos de visualização em grandes malhas ferroviárias internacionais.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen) ![Focus](https://img.shields.io/badge/Foco-Seguran%C3%A7a_Operacional-red)
 
-O sistema monitora uma rota fictícia que conecta o **Brasil ao Canadá**, passando por Argentina, Chile, Peru, Colômbia, Panamá, México e EUA.
+Este projeto é uma solução proprietária de **Engenharia de Dados e Business Intelligence** desenvolvida em **Python**.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
+O sistema simula o monitoramento de uma malha ferroviária internacional (Brasil-Canadá), focando não apenas na visualização, mas na **lógica de segurança**, estruturação de dados e detecção de anomalias operacionais.
 
-## 🎯 O Problema
-Em operações logísticas de escala continental, a dependência de planilhas estáticas e a rigidez de ERPs tradicionais dificultam a tomada de decisão rápida. Gestores precisam visualizar gargalos de consumo e custos em tempo real, cruzando fronteiras e moedas.
+## 🎯 O Desafio de Negócio
+Em grandes operações ferroviárias, a segurança e a eficiência dependem da capacidade de cruzar dados de diferentes fontes (ERPs, Sensores, Planilhas de Manutenção).
+O objetivo deste projeto foi eliminar silos de informação e criar uma **camada de inteligência** capaz de:
+1. Centralizar dados dispersos.
+2. Identificar desvios de padrão (consumo/custo) que indicam risco mecânico.
+3. Apoiar a decisão rápida para prevenção de acidentes e perdas.
 
-## 💡 A Solução
-Um Dashboard Web Interativo (Dark Mode) que atua como camada de inteligência:
-- **Monitoramento Global:** Visualização da rota completa (Sul ➔ Norte).
-- **Análise de Tendência:** Algoritmos que projetam a evolução mensal (Jan-Dez) de cada terminal.
-- **Gestão de Custos:** Breakdown automático de despesas (Combustível, Manutenção e Pessoal).
+## 💡 A Solução Técnica (Além do Dashboard)
+O sistema foi arquitetado em três camadas para garantir integridade e escalabilidade:
 
-## 🛠️ Tecnologias
-- **Python:** Processamento de dados (Backend).
-- **Dash & Plotly:** Interface analítica interativa.
-- **Pandas/NumPy:** Modelagem estatística e tratamento de dados.
+### 1. Camada de Engenharia de Dados (ETL)
+- **Ingestão:** Script Python preparado para ler arquivos legados (`.csv`, `.xlsx`) ou conectar via API.
+- **Tratamento:** Limpeza automática de dados inconsistentes e tipagem forte (garantindo que datas e valores numéricos sejam processados corretamente).
+- **Regras de Negócio:**
+    - *Cálculo de Desvio:* Algoritmo que compara o realizado vs. planejado.
+    - *Auditoria de Custos:* Validação automática de lançamentos de manutenção.
 
-- ## ⚙️ Arquitetura de Integração (Simulação)
-Embora este portfólio utilize dados estáticos por segurança, o código foi estruturado com princípios de **ETL (Extract, Transform, Load)** para ambientes corporativos:
+### 2. Camada de Visualização e Decisão
+Um Painel Web Interativo (Dark Mode) desenvolvido com **Dash & Plotly**:
+- **Monitoramento Geográfico:** Rastreabilidade de ativos em rota crítica.
+- **Análise de Tendência:** Curvas de evolução mensal para prever desgaste e demanda.
+- **Breakdown de Custos:** Visão granular de Combustível, Pessoal e Manutenção Preventiva.
 
-1.  **Camada de Ingestão:** O script aceita entrada de arquivos `.csv` (padrão SAP/ERP) ou conexão via API Rest.
-2.  **Processamento (Pandas):**
-    - Limpeza de dados nulos.
-    - Tipagem de variáveis (Data, Float, String).
-    - Criação de colunas calculadas (KPIs de Custo x Km).
-3.  **Visualização (Front-end):** O Dash consome apenas os dados já tratados, garantindo performance leve para o usuário final.
+## ⚙️ Arquitetura e Tecnologias
+O projeto prioriza performance e lógica robusta, essenciais para ambientes de Segurança Operacional.
 
----
-*Projeto desenvolvido para portfólio de Data Science e Logística.*
+- **Linguagem:** Python 3.10 🐍
+- **Processamento:** Pandas & NumPy (Para estatística e validação de regras).
+- **Visualização:** Dash & Plotly (Front-end analítico).
+- **Conceitos Aplicados:** ETL, Data Cleaning, Regras de Negócio, Automação.
+
+## 🚀 Como Executar o Projeto
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git](https://github.com/GitShiryu/Ferrovia-Intercontinental-BI.git)
